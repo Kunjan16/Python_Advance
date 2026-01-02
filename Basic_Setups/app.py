@@ -57,3 +57,7 @@ full = f"{first_name} {last_name}"
 print(full)
 
 full = f"{len(first_name)} {last_name}"
+print(full)
+
+full = f"{len(first_name)} {2 + 2}"
+print(full)
