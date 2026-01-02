@@ -31,3 +31,27 @@ print(id(course[0]))  # prints the memory address of the first character of the 
 course = "Java Programming"
 print(id(course))  # prints the memory address of variable course after modification    
 print(id(course[0]))  # prints the memory address of the first character of the modified string stored in variable course
+
+message = 'Python "Programming is fun!'
+print(message)
+
+msg = "Python \"Programming is fun!"
+print(msg)
+
+msgs = "Python \nProgramming is fun!"
+print(msgs)
+
+msgss = """Python 
+Programming
+is fun!"""
+print(msgss)
+
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print(full_name)
+
+first_name = "John"
+last_name = "Doe"   
+full = f"{first_name} {last_name}"
+print(full)
