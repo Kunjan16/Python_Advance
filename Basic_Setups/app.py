@@ -55,3 +55,5 @@ first_name = "John"
 last_name = "Doe"   
 full = f"{first_name} {last_name}"
 print(full)
+
+full = f"{len(first_name)} {last_name}"
