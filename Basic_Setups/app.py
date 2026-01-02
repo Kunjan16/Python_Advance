@@ -61,3 +61,15 @@ print(full)
 
 full = f"{len(first_name)} {2 + 2}"
 print(full)
+
+name = "    Kunjan Singh"
+print(name.lower())  # prints the string in lowercase
+print(name.upper())  # prints the string in uppercase
+print(name.title())  # prints the string in title case
+print(name.strip())  # prints the string after removing leading and trailing whitespaces
+print(name.find("Sing"))  # prints the starting index of the substring "Singh"
+print(name.find("sing"))  # prints -1 as the substring "sing" is not found (case-sensitive)
+print(name.replace("K", "-"))  # prints the string after replacing "K" with "-"
+print("Kunjan" in name)  # prints True if "Kunjan" is found in the string, else False
+print("kunjan" in name)  # prints False as the search is case-sensitive
+print("Kunjan" not in name)  # prints False if "Kunjan" is found in the string, else True
