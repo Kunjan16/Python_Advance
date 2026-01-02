@@ -28,3 +28,6 @@ print(course[:])  # prints the entire string stored in variable course
 print(id(course))  # prints the memory address of variable course
 print(id(course[0]))  # prints the memory address of the first character of the string stored in variable course
 # Strings are immutable, so modifying a character will create a new string
+course = "Java Programming"
+print(id(course))  # prints the memory address of variable course after modification    
+print(id(course[0]))  # prints the memory address of the first character of the modified string stored in variable course
