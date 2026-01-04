@@ -77,3 +77,12 @@ print("Kunjan" not in name)  # prints False if "Kunjan" is found in the string, 
 course = "Python Programming"
 print(course.replace("Python", "Java"))  # prints the string after replacing "Python" with "Java"
 print(course.replace("python", "Java"))  # prints the original string as "python" is not found (case-sensitive)
+
+x = 10
+x = 0b1010  # binary representation of 10
+print(x)  # prints 10
+print(bin(x))  # prints the binary representation of x
+
+x = 0x12c  # hexadecimal representation of 300
+print(x)  # prints 300
+print(hex(x))  # prints the hexadecimal representation of x
