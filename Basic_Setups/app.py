@@ -73,3 +73,7 @@ print(name.replace("K", "-"))  # prints the string after replacing "K" with "-"
 print("Kunjan" in name)  # prints True if "Kunjan" is found in the string, else False
 print("kunjan" in name)  # prints False as the search is case-sensitive
 print("Kunjan" not in name)  # prints False if "Kunjan" is found in the string, else True
+
+course = "Python Programming"
+print(course.replace("Python", "Java"))  # prints the string after replacing "Python" with "Java"
+print(course.replace("python", "Java"))  # prints the original string as "python" is not found (case-sensitive)
