@@ -99,3 +99,24 @@ print(x)  # prints the value of x
 x = x + 3
 x += 3
 print(x)  # prints the value of x after addition
+
+PI = 3.14 # we use uppercase letters to indicate that this variable is a constant and should not be changed
+print(round(PI))  # prints 3
+print(abs(-PI))  # prints 3.14
+
+import math
+PI = -3.14
+print(math.floor(PI))  # prints -4
+print(math.ceil(PI))  # prints -3
+
+x = input("Enter a number: ")  # takes input from the user as a string
+
+print(int(x))
+print(float(x))
+print(bool(x))
+
+print(bool(0))  # prints False
+print(bool(""))  # prints False
+print(bool(None))  # prints False
+print(bool([]))  # prints False
+print(bool(25))  # prints True
