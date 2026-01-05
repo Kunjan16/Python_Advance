@@ -86,3 +86,16 @@ print(bin(x))  # prints the binary representation of x
 x = 0x12c  # hexadecimal representation of 300
 print(x)  # prints 300
 print(hex(x))  # prints the hexadecimal representation of x
+
+x = 10 + 3
+x = 10 - 3
+x = 10 * 3
+x = 10 / 3  # prints 3.3333333333333335
+x = 10 // 3  # prints 3
+x = 10 % 3  # prints 1
+x = 10 ** 3  # prints 1000
+print(x)  # prints the value of x
+
+x = x + 3
+x += 3
+print(x)  # prints the value of x after addition
