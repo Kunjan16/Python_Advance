@@ -131,8 +131,8 @@ else:
     print("You are a child.")
 
 print("All Done!")
-
-if x > 1:
+xyz = 0
+if xyz > 1:
     pass #without pass statement, it will give IndentationError, pass is used as a placeholder and does nothing
 else:
     pass  # placeholder for future code     
