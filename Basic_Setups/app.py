@@ -120,3 +120,14 @@ print(bool(""))  # prints False
 print(bool(None))  # prints False
 print(bool([]))  # prints False
 print(bool(25))  # prints True
+
+age = 22
+if age >= 18:
+    print("You are an adult.")
+    print("You can vote.")
+elif age >= 13:
+    print("You are a teenager.")
+else:
+    print("You are a child.")
+
+print("All Done!")
