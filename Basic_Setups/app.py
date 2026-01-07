@@ -136,3 +136,12 @@ if xyz > 1:
     pass #without pass statement, it will give IndentationError, pass is used as a placeholder and does nothing
 else:
     pass  # placeholder for future code     
+
+name = " "
+if not name.strip():
+    print("Name is empty")
+
+if age >= 18 and age < 65:
+    print("You are eligible to work.")    #18 <= age < 65
+if 18 <= age < 65:
+    print("You are eligible to work.")    
