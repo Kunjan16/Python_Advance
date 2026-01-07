@@ -171,3 +171,22 @@ for x in range(2, 10, 2):
     print(x)
 
 print(type(range(5)))  # prints <class 'range'>
+
+names = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Heidi", "Ivan", "Judy"]
+found = False
+for name in names:
+    if name.startswith("J"):
+        print("Found!")
+        found = True
+        break
+if not found:
+    print("Not Found!")  
+
+names = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Heidi", "Ivan", "Judy"]
+for name in names:
+    if name.startswith("J"):
+        print("Found!")
+        break
+else:# this else corresponds to for loop, it will be executed only if the loop is not terminated by break statement
+    print("Not Found!")     
+
