@@ -153,6 +153,13 @@ else:
     message = "You are a child."
 # Ternary Operator in Python
 message = "You are an adult." if age >= 18 else "You are a child."
+print(message)   
 
+for x in "Python":
+    print(x)
 
-print(message)        
+for x in ['a', 'b', 'c']:
+    print(x)
+
+for x in range(5):
+    print(x)    
