@@ -145,3 +145,14 @@ if age >= 18 and age < 65:
     print("You are eligible to work.")    #18 <= age < 65
 if 18 <= age < 65:
     print("You are eligible to work.")    
+
+age = 25
+if age >= 18:
+    message = "You are an adult."   
+else:
+    message = "You are a child."
+# Ternary Operator in Python
+message = "You are an adult." if age >= 18 else "You are a child."
+
+
+print(message)        
