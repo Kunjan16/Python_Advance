@@ -188,5 +188,12 @@ for name in names:
         print("Found!")
         break
 else:# this else corresponds to for loop, it will be executed only if the loop is not terminated by break statement
-    print("Not Found!")     
+    print("Not Found!")  
+
+guess = 0
+answer = 5
+while answer != guess:
+    guess = int(input("Enter your guess: ")) 
+else:# this else corresponds to while loop, it will be executed only if the loop is not terminated by break statement
+    print("You guessed it right!")          
 
