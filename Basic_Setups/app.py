@@ -162,4 +162,12 @@ for x in ['a', 'b', 'c']:
     print(x)
 
 for x in range(5):
-    print(x)    
+    print(x)  
+
+for x in range(2, 5):
+    print(x)
+
+for x in range(2, 10, 2):
+    print(x)
+
+print(type(range(5)))  # prints <class 'range'>
