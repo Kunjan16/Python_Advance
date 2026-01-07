@@ -195,5 +195,31 @@ answer = 5
 while answer != guess:
     guess = int(input("Enter your guess: ")) 
 else:# this else corresponds to while loop, it will be executed only if the loop is not terminated by break statement
-    print("You guessed it right!")          
+    print("You guessed it right!")
+
+
+def increment(number, by):
+    pass  # placeholder for future code     
+print(increment(2, 3))
+
+def increment(number: int, by: int) -> tuple:
+    return (number, number + by)
+print(increment(2, 3))
+
+def multiply(a, b):
+    return a * b
+multiply(2, 3)
+
+def multiply(list):
+    for x in list:
+        print(x * 2)
+multiply([2, 3, 4, 5])
+
+def multiply(*list):#*list is used to pass variable number of arguments to the function
+    total = 1
+    for number in list:
+        total *= number
+    return total
+print(multiply(2, 3, 4, 5))     
+
 
