@@ -1,3 +1,13 @@
+#use f9 to set a breakpoint on the line above and run the debugger to step through the code
+#to move the cursor from stat of a line to the end of the line, use Shift + End
+#to move the cursor from end of a line to the start of the line, use Shift + Home
+#To move the cursor to the beginning of the file, use Ctrl + Home
+#To move the cursor to the end of the file, use Ctrl + End
+#To move a line up or down, use Alt + Up Arrow or Alt + Down Arrow
+#To duplicate a line, use Shift + Alt + Up Arrow or Shift + Alt + Down Arrow
+# To comment or uncomment a line, use Ctrl + /
+
+
 print("Hello World")
 print("*" * 10)
 student_count = 1000
@@ -241,3 +251,13 @@ def greet():
     print(message)  # prints "Hello" because message is accessed from the local scope
 greet()    
 print(message)  # prints "Hi" because message is accessed from the global scope    
+
+def multiply(*numbers):
+    total = 1
+    for number in numbers:
+        total *= number
+    return total
+
+print("start")
+print(multiply(1, 2, 3))
+print("finish")
