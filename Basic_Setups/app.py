@@ -224,17 +224,20 @@ print(multiply(2, 3, 4, 5))
 
 def save_user(**user):#**user is used to pass variable number of keyword arguments to the function
     print(user)
+    print(user["id"])
+    print(user["name"])
+    print(user.get("age"))  # using get method to avoid KeyError if age is not provided
 
 save_user(id=1, name="John", age=25)
-save_user(id=2, name="Jane", age=30, city="New York")   
-def save_user(id, name, age=18):#age has a default value of 18
-    print(f"ID: {id}, Name: {name}, Age: {age}")
-save_user(1, "John")
-save_user(2, "Jane", 25)        
-def greet(name):
-    def get_message():
-        return "Hello "
-    result = get_message() + name
-    return result
 
+def greet():
+    if True:
+        message = "Hello"#wherever a variable is defined, it is accessible in the enclosing scopes
+    print(message) # prints "Hello" because message is defined in the enclosing function scope
 
+message = "Hi"  # global scope
+def greet():
+    message = "Hello"#local scope
+    print(message)  # prints "Hello" because message is accessed from the local scope
+greet()    
+print(message)  # prints "Hi" because message is accessed from the global scope    
