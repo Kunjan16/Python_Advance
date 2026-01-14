@@ -9,3 +9,10 @@ print(number)
 chars = list("Hello World")  # prints ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
 print(chars)
 print(len(chars))  # prints 11
+print(letters[0])  # prints 'a'
+print(letters[-1])  # prints 'e'
+print(letters)
+print(letters[1:4])  # prints ['b', 'c', 'd']
+print(letters[::2])  # prints ['a', 'c', 'e']
+print(letters[::-1])  # prints ['e', 'd', 'c', 'b', 'a']
+print(letters[:])  # prints ['a', 'b', 'c', 'd', 'e']
