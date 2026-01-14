@@ -29,3 +29,10 @@ first, *middle, last = numbers
 print(first)   # prints 1   
 print(middle)  # prints [2, 3, 4]  
 print(last)    # prints 5
+
+for letter in enumerate(letters):
+    print(letter)
+    print(f"Index: {letter[0]}, Letter: {letter[1]}")
+
+for index, letter in enumerate(letters):
+    print(f"Index: {index}, Letter: {letter}")
