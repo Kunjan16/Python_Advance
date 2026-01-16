@@ -36,3 +36,38 @@ for letter in enumerate(letters):
 
 for index, letter in enumerate(letters):
     print(f"Index: {index}, Letter: {letter}")
+
+for letter in enumerate(letters):
+    print(letter[0], letter[1])
+
+items = [0, "a"]
+index, letter = items
+print(index)  # prints 0
+
+item = (0, "a")
+index, letter = item
+print(index)  # prints 0
+
+for index, letter in enumerate(letters):
+    print(index, letter)
+
+#Adding elements to a list
+letters.append('f')
+print(letters)  # prints ['a', 'b', 'c', 'd', 'e', 'f']
+letters.insert(0, 'z')
+print(letters)  # prints ['z', 'a', 'b', 'c', 'd', 'e', 'f']
+#Removing elements from a list  
+letters.remove('c')
+print(letters)  # prints ['z', 'a', 'b', 'd', 'e', 'f']
+popped = letters.pop()
+print(popped)  # prints 'f'
+print(letters)  # prints ['z', 'a', 'b', 'd', 'e']
+letters.pop(0)  
+print(letters)  # prints ['a', 'b', 'd', 'e']
+letters.remove('b')
+print(letters)  # prints ['a', 'd', 'e']
+del letters[1]
+print(letters)  # prints ['a', 'e']     
+del letters[0:3] # removes elements from index 0 to 2
+letters.clear()  # removes all elements from the list
+print(letters)  # prints []
