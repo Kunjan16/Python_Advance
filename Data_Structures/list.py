@@ -71,3 +71,30 @@ print(letters)  # prints ['a', 'e']
 del letters[0:3] # removes elements from index 0 to 2
 letters.clear()  # removes all elements from the list
 print(letters)  # prints []
+
+#Finding elements in a list
+letters = ['a', 'b', 'c', 'd', 'e'] 
+print(letters.index('c'))  # prints 2
+if 'g' in letters:
+    print(letters.index('g'))  # raises ValueError as 'g' is not in the list
+
+letters.count('a')  # prints 1
+letters.append('a') 
+print(letters.count('a'))  # prints 2
+
+#Sorting a list
+my_list = [3, 2, 7, 5, 6, 1]
+my_list.sort()  
+print(my_list)  # prints [1, 2, 3, 5, 6, 7]
+
+my_list.sort(reverse=True)
+print(my_list)  # prints [7, 6, 5, 3, 2, 1]
+print(sorted(my_list))  # prints [1, 2, 3, 5, 6, 7]
+print(sorted(my_list, reverse=True))  # prints [7, 6, 5, 3, 2, 1]
+
+items = [('item1', 5), ('item2', 3), ('item3', 8)]
+
+def sort_item(item):
+    return item[1]
+items.sort(key=sort_item)
+print(items)  # prints [('item1', 5), ('item2', 3), ('item3', 8)]   
