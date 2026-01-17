@@ -52,3 +52,22 @@ def find_second_element(numbers):
 second_smallest, second_largest = find_second_element(numbers)
 print("Second smallest:", second_smallest)        
 print("Second largest:", second_largest)
+
+
+
+#sorting
+arr_list = [13, 46, 24, 52, 20, 9]
+
+def bubblesort(arr_list):
+    num = len(arr_list)
+    for i in range(num):
+        for j in range(0, num-i-1):
+            if arr_list[j] > arr_list[j+1]:
+                arr_list[j], arr_list[j+1] = arr_list[j+1], arr_list[j]
+
+    return arr_list
+
+sorted_list = bubblesort(arr_list)
+print(sorted_list)
+
+
