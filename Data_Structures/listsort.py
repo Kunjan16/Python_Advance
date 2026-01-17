@@ -55,7 +55,7 @@ print("Second largest:", second_largest)
 
 
 
-#sorting
+#Bubble sorting
 arr_list = [13, 46, 24, 52, 20, 9]
 
 def bubblesort(arr_list):
@@ -70,4 +70,20 @@ def bubblesort(arr_list):
 sorted_list = bubblesort(arr_list)
 print(sorted_list)
 
+#Selection Sorting
 
+sort_arr = [13, 46, 24, 52, 20, 9]
+
+def selection_sort(sort_arr):
+    n = len(sort_arr)
+    for i in range(n):
+        least = i
+        for j in range(i+1, n):
+            if sort_arr[j] < sort_arr[least]:
+                least = j
+        sort_arr[i], sort_arr[least] = sort_arr[least], sort_arr[i]
+
+    return sort_arr
+
+soretd_sel_arr = selection_sort(sort_arr)
+print(soretd_sel_arr)                 
