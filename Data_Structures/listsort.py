@@ -87,3 +87,19 @@ def selection_sort(sort_arr):
 
 soretd_sel_arr = selection_sort(sort_arr)
 print(soretd_sel_arr)                 
+
+#Question
+#Given a list of integers, find the second largest element in the list without sorting it.
+my_list = [64, 34, 25, 12, 22, 11, 90]
+def find_second_largest(my_list):
+    first = second = float('-inf')
+    for number in my_list:
+        if number > first:
+            second = first
+            first = number
+        elif first > number > second:
+            second = number
+    return second
+
+second_largest = find_second_largest(my_list)
+print("Second largest element is:", second_largest)
