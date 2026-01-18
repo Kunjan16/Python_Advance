@@ -103,3 +103,21 @@ def find_second_largest(my_list):
 
 second_largest = find_second_largest(my_list)
 print("Second largest element is:", second_largest)
+
+#Improved Version
+def find_second_largest(my_list):
+    if len(my_list) < 2:
+        return None
+
+    first = second = float('-inf')
+
+    for number in my_list:
+        if number > first:
+            second = first
+            first = number
+        elif first > number > second:
+            second = number
+
+    return second if second != float('-inf') else None
+second_largest = find_second_largest(my_list)
+print("Second largest element is:", second_largest)
