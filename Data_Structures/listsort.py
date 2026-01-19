@@ -140,3 +140,16 @@ def find_second_smallest(my_list):
 second_smallest = find_second_smallest(my_list)
 print("Second smallest element is:", second_smallest)
 print(my_list)
+
+
+#Given a list of integers, remove duplicates without using set() or dict().
+def remove_duplicates(input_list):
+    unique_list = []
+    for item in input_list:
+        if item not in unique_list:
+            unique_list.append(item)
+    return unique_list
+input_list = [1, 2, 2, 3, 4, 4, 5]
+result = remove_duplicates(input_list)
+print("List after removing duplicates:", result)
+print(my_list)
