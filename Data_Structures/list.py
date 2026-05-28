@@ -24,11 +24,20 @@ fourth = numbers[3]
 fifth = numbers[4]
 
 first, second, third, fourth, fifth = numbers #what we have here is same as above but in a single line
+first, second, *others = numbers
+print(first)   # prints 1
+print(second)  # prints 2   
+print(others)  # prints [3, 4, 5]
 print(first, second, third, fourth, fifth)  # prints 1 2 3 4 5
 first, *middle, last = numbers
 print(first)   # prints 1   
 print(middle)  # prints [2, 3, 4]  
 print(last)    # prints 5
+first, *middle, second_last, last = numbers
+print(first)        # prints 1  
+print(middle)       # prints [2, 3]
+print(second_last)  # prints 4
+print(last)         # prints 5
 
 for letter in enumerate(letters):
     print(letter)
@@ -97,4 +106,26 @@ items = [('item1', 5), ('item2', 3), ('item3', 8)]
 def sort_item(item):
     return item[1]
 items.sort(key=sort_item)
-print(items)  # prints [('item1', 5), ('item2', 3), ('item3', 8)]   
+items.sort(key=lambda item: item[1])#To define a function that we only need to use once, we can use a lambda function instead of defining a separate function.
+print(items)  # prints [('item2', 3), ('item1', 5), ('item3', 8)]
+
+items = [
+    ("Product1", 10),
+    ("Product2", 9),
+    ("Product3", 12)
+]
+
+prices = []
+for item in items:#the better way to do this is to use map function which is more efficient than using a for loop
+    prices.append(item[1])
+print(prices)  # prints [10, 9, 12] 
+
+prices = list(map(lambda item: item[1], items)) #this is the better way to do this using map function
+print(prices)  # prints [10, 9, 12]
+
+result = list(map(lambda item: item[1] >=10, items)) #this will return a list of boolean values indicating whether the price is greater than or equal to 10
+print(result)  # prints [True, False, True]
+
+filtered = list(filter(lambda item: item[1] >= 10, items)) #this will return a list of items that have a price greater than or equal to 10
+print(filtered)  # prints [('Product1', 10), ('Product3', 12)]
+
