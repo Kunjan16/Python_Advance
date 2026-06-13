@@ -128,4 +128,18 @@ print(result)  # prints [True, False, True]
 
 filtered = list(filter(lambda item: item[1] >= 10, items)) #this will return a list of items that have a price greater than or equal to 10
 print(filtered)  # prints [('Product1', 10), ('Product3', 12)]
+filtered = [item for item in items if item[1] >= 10] #this is the better way to do this using list comprehension which is more efficient than using filter function
+print(filtered)  # prints [('Product1', 10), ('Product3', 12)]
 
+comprehension = [item[1] for item in items] #this is the better way to do this using list comprehension which is more efficient than using map function
+print(comprehension)  # prints [10, 9, 12]
+
+
+list1 = [1, 2, 3]
+list2 = [10, 20, 30]
+
+combined = list(zip(list1, list2)) #this will combine the two lists into a list of tuples
+print(combined)  # prints [(1, 10), (2, 20), (3, 30)]
+print(list(zip("abc", list1, list2))) #this will combine the three lists into a list of tuples, output will be [('a', 1, 10), ('b', 2, 20), ('c', 3, 30)]
+unzipped = list(zip(*combined)) #this will unzip the combined list back into two separatelists
+print(unzipped)  # prints [(1, 2, 3), (10, 20, 30)]
