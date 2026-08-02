@@ -143,3 +143,12 @@ print(combined)  # prints [(1, 10), (2, 20), (3, 30)]
 print(list(zip("abc", list1, list2))) #this will combine the three lists into a list of tuples, output will be [('a', 1, 10), ('b', 2, 20), ('c', 3, 30)]
 unzipped = list(zip(*combined)) #this will unzip the combined list back into two separatelists
 print(unzipped)  # prints [(1, 2, 3), (10, 20, 30)]
+
+
+
+
+new_list = ['a', 'b', 'c', 'b', 'd', 'b', 'e']
+for item in new_list:
+    if item == 'b':
+        new_list.remove(item)
+print(new_list)  # prints ['a', 'c', 'd', 'e']        

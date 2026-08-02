@@ -1,3 +1,4 @@
+# Stack is a data structure that follows the Last In First Out (LIFO) principle. It is used to store a collection of elements, where the last element added is the first one to be removed. In Python, we can use a list to implement a stack.
 browsing_session = []
 browsing_session.append(1)
 browsing_session.append(2)
