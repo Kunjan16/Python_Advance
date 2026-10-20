@@ -11,3 +11,24 @@ print(d['k1'])  # prints 123
 print(d['k2'])  # prints [0, 1, 2]  
 print(d['k3'])  # prints {'insideKey': 100}
 print(d['k3']['insideKey'])  # prints 100
+print(d['k2'][2])  # prints 2
+
+dic = {'key1' : ['a', 'b', 'c']}
+mylist = dic['key1']
+print(mylist)  # prints ['a', 'b', 'c']
+letters = mylist[2]
+print(letters)  # prints 'c'
+print(letters.upper())  # prints 'C'
+
+new_dict = {'key1': 1, 'key2': 2}
+#Adding elements to a dictionary    
+new_dict['key3'] = 3
+print(new_dict)  # prints {'key1': 1, 'key2': 2, 'key3': 3}
+
+#overwriting an existing key in a dictionary
+new_dict['key1'] = 100  
+print(new_dict)  # prints {'key1': 100, 'key2': 2, 'key3': 3}
+
+print(new_dict.keys())  # prints dict_keys(['key1', 'key2', 'key3'])
+print(new_dict.values())  # prints dict_values([100, 2, 3])
+print(new_dict.items())  # prints dict_items([('key1', 100), ('key2', 2), ('key3', 3)])
