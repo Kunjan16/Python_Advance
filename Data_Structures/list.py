@@ -12,6 +12,9 @@ print(len(chars))  # prints 11
 print(letters[0])  # prints 'a'
 print(letters[-1])  # prints 'e'
 print(letters)
+print("letters are ", letters) # prints letters are  ['a', 'b', 'c', 'd', 'e']
+print(f"letters are {letters}") # Output: letters are ['a', 'b', 'c', 'd', 'e']
+print("letters are {}".format(letters)) # Output: letters are ['a', 'b', 'c', 'd', 'e']
 print(letters[1:4])  # prints ['b', 'c', 'd']
 print(letters[::2])  # prints ['a', 'c', 'e']
 print(letters[::-1])  # prints ['e', 'd', 'c', 'b', 'a']
@@ -106,6 +109,7 @@ items = [('item1', 5), ('item2', 3), ('item3', 8)]
 def sort_item(item):
     return item[1]
 items.sort(key=sort_item)
+print(items)  # prints [('item2', 3), ('item1', 5), ('item3', 8)]
 items.sort(key=lambda item: item[1])#To define a function that we only need to use once, we can use a lambda function instead of defining a separate function.
 print(items)  # prints [('item2', 3), ('item1', 5), ('item3', 8)]
 

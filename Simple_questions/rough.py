@@ -18,3 +18,4 @@ print(f"Hello, my name is {name}.")
 name = "Sam"
 age = 25
 print(f"{name} is {age} years old.")
+print(f"result is {result:1.3f}") # Format to 3 decimal places using f-string
