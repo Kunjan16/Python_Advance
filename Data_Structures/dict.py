@@ -32,3 +32,24 @@ print(new_dict)  # prints {'key1': 100, 'key2': 2, 'key3': 3}
 print(new_dict.keys())  # prints dict_keys(['key1', 'key2', 'key3'])
 print(new_dict.values())  # prints dict_values([100, 2, 3])
 print(new_dict.items())  # prints dict_items([('key1', 100), ('key2', 2), ('key3', 3)])
+
+points = {'x': 1, 'y': 2, 'z': 3}
+points = dict(x=1, y=2, z=3) # Both lines create the same dictionary
+del points['x']  # deletes the key 'x' and its value
+print(points)  # prints {'y': 2, 'z': 3}
+for key in points:
+    print(key, points[key])  # prints each key and its corresponding value
+for x in points.items():
+    print(x)  # prints each key-value pair as a tuple    
+
+values = []
+for x in range(5):
+    values.append(x*2)
+
+#[expression for item in items] 
+values = [x*2 for x in range(5)]  # creates a list of even numbers [0, 2, 4, 6, 8]
+values = {x*2 for x in range(5)}  # creates a set of even numbers {0, 2, 4, 6, 8}
+values = {x: x*2 for x in range(5)}  # creates a dictionary {0: 0, 1: 2, 2: 4, 3: 6, 4: 8}
+values = {}
+for x in range(5):
+    values[x] = x*2  # creates the same dictionary {0: 0, 1: 2, 2: 4, 3: 6, 4: 8}
