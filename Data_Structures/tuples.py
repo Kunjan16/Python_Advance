@@ -26,3 +26,8 @@ print(number_tuple)  # prints (1, 2, 3)
 words = "Hello World"
 word_tuple = tuple(words)   
 print(word_tuple)  # prints ('H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd')
+
+t = ('a', 'b', 'a') #this is a tuple with duplicate values
+print(t.count('a'))  # prints 2, counts the number of occurrences of 'a' in the tuple
+print(t.index('b'))  # prints 1, returns the index of the first occurrence of 'b' in the tuple
+#t[0] = 'c' #this will throw an error because tuples are immutable and we cannot change the value of an element in a tuple
